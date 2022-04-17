@@ -4,8 +4,59 @@
     height: 50vw;
     box-shadow: 0px 6px 28px -23px;
     margin:auto;
-    margin-top: 5em;
+    margin-top: 3em;
+    overflow: auto;
+
+    .table-container{
+        border: 1px solid lightgrey;
+    }
+
+    .table-title:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .table-title-entry {
+        float: left;
+        width: 20%;
+        display: flex;
+    }
+
+    .table-title{
+        padding-left: 2em;
+    }
+
+    .table-entires:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .table-entry-entries {
+        float: left;
+        width: 100%;
+        display: flex;
+        border-top: 1px solid lightgrey;
+        justify-content: space-between;
+        font-weight: 200;
+    }
+
+    p{
+        width: 20%;
+        padding-left: 40px;
+    }
+    .arrow-logo{
+        height: auto;
+        width: 10px;
+        margin-left: 10px;
+    }
+
 }
+
+
+
+
 
 @media only screen and (max-width: 600px) {
     .table-display{

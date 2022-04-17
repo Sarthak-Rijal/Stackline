@@ -9,9 +9,9 @@ function ProductDisplay() {
             <h2>{productData[0].title}</h2>
             <p className='product-subtitle'>{productData[0].subtitle}</p>
             <div className='product-tag-group'>
-            {productData[0].tags.map((data) => {
+            {productData[0].tags.map((data,i) => {
               return (
-                <div className='product-tag'>
+                <div className='product-tag' key={i}>
                   {data}
                 </div>
               );
